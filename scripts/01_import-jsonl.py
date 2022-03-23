@@ -1,7 +1,8 @@
+# import the required modules to read/write jsonl and csv files
 import jsonlines
 import csv
 
-# create CSV output
+# create a blank csv output in the current folder, with utf-8 encoding and using the @@@ method
 csvfile = open("snscrape_out.csv",'a',encoding='utf-8')
 csvfile_writer = csv.writer(csvfile, delimiter='\t')
 
